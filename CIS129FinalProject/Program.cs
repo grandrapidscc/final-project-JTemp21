@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.text;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace WizertFiveGame
@@ -23,7 +23,7 @@ namespace WizertFiveGame
         {
             if (_mp <= 0)
             {
-                Console.WriteLine("Out of magic points.")
+                Console.WriteLine("Out of magic points.");
             }
             else
             {
@@ -37,10 +37,10 @@ namespace WizertFiveGame
 
             if (_hp <= 0)
             {
-                Console.WriteLine($"The Wizert {_wizertName} has died in battle!")
+                Console.WriteLine($"The Wizert {_wizertName} has died in battle!");
             }
             else
-                Console.WriteLine($"The Wizert {_wizertName} has taken damage.")
+                Console.WriteLine($"The Wizert {_wizertName} has taken damage.");
         }
     }
 }
