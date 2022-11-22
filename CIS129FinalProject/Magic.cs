@@ -18,9 +18,24 @@ namespace CIS129FinalProject
             Console.WriteLine("The Wizert casts a spell to heal his wounds.");
         }
 
-        public void Flee() 
+        public void Flee()
         {
             Console.WriteLine("The Wizert attempts to flee from battle.");
+        }
+
+        public void BodySlam() 
+        { 
+            Console.WriteLine("Goblin attacks with a body slam attack.")
+        }
+
+        public void Cleave()
+        {
+            Console.WriteLine("Orc attacks witha cleave attack.")
+        }
+
+        public void Screech() 
+        { 
+            Console.WriteLine("Banshee attacks with a screech.")
         }
     }
 }

@@ -19,28 +19,68 @@ namespace CIS129FinalProject
             _mp = mp;
         }
 
-        public void useMagic()
-        {
-            if (_mp <= 0)
-            {
-                Console.WriteLine("Out of magic points.");
-            }
-            else
-            {
-                _mp--;
-            }
+        public Goblin(int hp) 
+        { 
+            _hp = hp; 
         }
 
-        public void TakeDamage()
+        public Orc(int hp)
         {
-            _hp--;
+            _hp = hp;
+        }
 
-            if (_hp <= 0)
+        public Banshee(int hp)
+        {
+            _hp = hp;
+        }
+
+        public void Magic(int action)
+        {
+            //switch statement
+            void Fireball()
             {
-                Console.WriteLine($"The Wizert {_wizertName} has died in battle!");
+                if (_mp <= 0)
+                {
+                    Console.WriteLine("Not enough MP.");
+                }
+                else
+                {
+                    Console.WriteLine("The Wizert casts a fireball that burns the enemy.");
+                    _mp -= 3;
+                }
             }
-            else
-                Console.WriteLine($"The Wizert {_wizertName} has taken damage.");
+            void Heal()
+            {
+                if (_mp <= 0)
+                {
+                    Console.WriteLine("Not enough MP.");
+                }
+                else
+                {
+                    Console.WriteLine("The Wizert casts a spell to heal his wounds.");
+                    _mp -= 5;
+                }
+            }
+
+            void Flee()
+            {
+                Console.WriteLine("The Wizert attempts to flee from battle.");
+            }
+
+            void TakeDamage()
+            {
+                _hp--;
+
+                if (_hp <= 0)
+                {
+                    Console.WriteLine($"The Wizert {_wizertName} has died in battle!");
+                }
+                else
+                {
+                    Console.WriteLine($"The Wizert {_wizertName} has taken damage.");
+                }
+
+            }
         }
     }
 }
