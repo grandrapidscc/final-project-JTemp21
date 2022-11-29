@@ -6,11 +6,34 @@ using System.Threading.Tasks;
 
 namespace CIS129FinalProject
 {
-    internal class Hostile
+    public class Orc
     {
-        public Hostile() 
-        {
+        private int _hp;
 
-        }    
+        public Orc(int hp)
+        {
+             _hp = hp;
+        }
+
+    }
+
+    public class Goblin
+    {
+        private int _hp;
+
+        public Goblin(int hp)
+        {
+            _hp = hp;
+        }
+    }
+
+    public class Banshee
+    {
+        private int _hp;
+
+        public Banshee(int hp)
+        {
+            _hp = hp;
+        }
     }
 }

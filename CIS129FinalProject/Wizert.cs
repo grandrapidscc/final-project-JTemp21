@@ -19,21 +19,6 @@ namespace CIS129FinalProject
             _mp = mp;
         }
 
-        public Goblin(int hp) 
-        { 
-            _hp = hp; 
-        }
-
-        public Orc(int hp)
-        {
-            _hp = hp;
-        }
-
-        public Banshee(int hp)
-        {
-            _hp = hp;
-        }
-
         public void Magic(int action)
         {
             //switch statement
