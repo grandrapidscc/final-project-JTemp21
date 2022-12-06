@@ -24,18 +24,18 @@ namespace CIS129FinalProject
         }
 
         public void BodySlam() 
-        { 
-            Console.WriteLine("Goblin attacks with a body slam attack.")
+        {
+            Console.WriteLine("Goblin attacks with a body slam attack.");
         }
 
         public void Cleave()
         {
-            Console.WriteLine("Orc attacks witha cleave attack.")
+            Console.WriteLine("Orc attacks witha cleave attack.");
         }
 
         public void Screech() 
-        { 
-            Console.WriteLine("Banshee attacks with a screech.")
+        {
+            Console.WriteLine("Banshee attacks with a screech.");
         }
     }
 }

@@ -12,28 +12,28 @@ namespace CIS129FinalProject
         private int _hp;
         private int _mp;
 
-        public Wizert(string creatureName, int hp, int mp)
+        public void Wizert(string creatureName, int hp, int mp)
         {
             _creatureName = creatureName;
             _hp = hp;
             _mp = mp;
         }
 
-        public Orc(string creatureName, int hp, int mp)
+        public void Orc(string creatureName, int hp, int mp)
         {
             _creatureName = creatureName;
             _hp = hp;
             _mp = mp;
         }
 
-        public Goblin(string creatureName, int hp, int mp)
+        public void Goblin(string creatureName, int hp, int mp)
         {
             _creatureName = creatureName;
             _hp = hp;
             _mp = mp;
         }
 
-        public Banshee(string creatureName, int hp, int mp)
+        public void Banshee(string creatureName, int hp, int mp)
         {
             _creatureName = creatureName;
             _hp = hp;
